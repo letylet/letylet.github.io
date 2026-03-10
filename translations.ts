@@ -73,7 +73,7 @@ export const translations = {
         },
         unityIcon: {
           label: "Unity",
-          text: "<b>Unity</b> è l'engine che preferisco. \nHo lavorato anche con <b>GDevelop</b> e ho una conoscenza base di <b>Godot</b> e <b>Unreal Engine</b>"
+          text: "<b>Unity</b> è l'engine che preferisco. \nHo lavorato anche con <b>GDevelop</b> e ho una conoscenza base di <b>Godot</b> e <b>Unreal Engine</b>."
         },
         unityIcon2: {
           label: "Unity",
@@ -298,7 +298,7 @@ export const translations = {
         },
         portal: {
           label: "Magic Portal",
-          text: "I am fascinated by immersive experiences because they place the user at the center, allowing for <b>natural interaction</b> with digital elements. <b>Augmented reality</b> and <b>mixed reality</b> have great potential: they amplify the real world without replacing it, adding layers of information and new ways of exploration. <b>Virtual reality</b>, on the other hand, allows for complete immersion in an environment and makes it easier to empathize, making it particularly effective for simulations, experiential learning, and interactive storytelling."
+          text: "I am fascinated by immersive experiences because they place the user at the center, allowing for <b>natural interaction</b> with digital elements. <b>Augmented and mixed reality</b> have great potential: they amplify the real world without replacing it. <b>Virtual reality</b> allows for complete immersion and makes it easier to empathize, making it particularly effective for simulations."
         },
         // Web Room
         screen: {
@@ -306,7 +306,7 @@ export const translations = {
           mission: {
             problem: "",
             solution: "A website where I try to talk about myself and my work, seeking to highlight <b>both my logical and responsible side as well as my creative and innovative one</b>. The technologies used are: Next, React, and Tailwind. I initially used AI (<b>Google AI Studio</b>) to have a starting point and then worked on the code, adding missing features and refining the structure.",
-            resp: "Design and development of the entire website.",
+            resp: "Design and development of the entire website",
             results: "With this website, I tried to represent myself and <b>I took care of every single aspect (experience design, UI/UX, development)</b>. This project allowed me to <b>experiment with artificial intelligence</b> and put my <b>experience design</b> skills to the test."
           }
         },
@@ -345,7 +345,7 @@ export const translations = {
         },
         tech: {
           label: "Technologies",
-          text: "Other programming languages and programs I can use :)"
+          text: "Other <b>programming languages</b> and <b>software</b> I can use :)"
         }
       },
       missionLabels: {

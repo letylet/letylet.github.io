@@ -44,8 +44,8 @@ export const PROJECTS: Project[] = [
       en: 'Collaborated on the development of a 3D game built with Unity.'
     },
     fullDescription: {
-      it: 'IL GIOCO: \nCostruisci e gestisci un ristorante tutto tuo per attirare nuovi avventurieri e potenziare Diavoli e umani con del cibo mostruoso. unisce la strategia dei classici RPG-tattici a elementi del genere roguelike. \n\nRESPONSABILITÀ: \nSviluppo schermate di UI, meccaniche di gioco e bug fixing \n\nCOSA HO IMPARATO: \n- Importazione e gestione Spine models in Unity \n- Gestione approfondita della UI \n- Capacità di inserirmi in un progetto complesso in uno stato di sviluppo già avanzato \n',
-      en: 'THE GAME: \nHunt monsters, loot their spoils and cook some otherworldly dishes! You can customize your own restaurant to attract new human adventurers and power up your Food Devils through hellish contracts! \n\n RESPONSIBILITIES: \nUI, gameplay mechanics and bug fixing '
+      it: 'IL GIOCO: \nCostruisci e gestisci un ristorante tutto tuo per attirare nuovi avventurieri e potenziare Diavoli e umani con del cibo mostruoso. unisce la strategia dei classici RPG-tattici a elementi del genere roguelike. \n\nRESPONSABILITÀ: \nSviluppo schermate di UI, meccaniche di gioco e bug fixing. \n\nCOSA HO IMPARATO: \n- Importazione e gestione Spine models in Unity \n- Gestione approfondita della UI \n- Capacità di inserirmi in un progetto complesso in uno stato di sviluppo già avanzato \n',
+      en: 'THE GAME: \nHunt monsters, loot their spoils and cook some otherworldly dishes! You can customize your own restaurant to attract new human adventurers and power up your Food Devils through hellish contracts! \n\n RESPONSIBILITIES: \nUI, gameplay mechanics and bug fixing. '
     },
     tags: ['Unity', 'C#', '3D', 'DOTween'],
     date: {
