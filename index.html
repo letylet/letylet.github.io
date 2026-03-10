@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Letizia Penné | Game & Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Nunito', 'sans-serif'],
+            },
+            colors: {
+              cv: {
+                dark: '#0f3c53', // Deep blue/teal from text
+                primary: '#0097a7', // Cyan/Teal main
+                secondary: '#88d8d4', // Light cyan
+                accent: '#f06292', // Pink from timeline
+                bg: '#f8fcfc', // Very light background
+                card: '#e0f7fa', // Light blue card bg
+                green: '#4db6ac', // Green from buttons
+              }
+            },
+            keyframes: {
+              wiggle: {
+                '0%, 100%': { transform: 'rotate(-3deg)' },
+                '50%': { transform: 'rotate(3deg)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
+              'pop-in': {
+                '0%': { transform: 'scale(0)', opacity: '0' },
+                '70%': { transform: 'scale(1.1)' },
+                '100%': { transform: 'scale(1)', opacity: '1' },
+              },
+              'slide-up': {
+                 '0%': { transform: 'translateY(50px)', opacity: '0' },
+                 '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+              'fade-in': {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              'zoom-in': {
+                '0%': { opacity: '0', transform: 'scale(0.95)' },
+                '100%': { opacity: '1', transform: 'scale(1)' },
+              }
+            },
+            animation: {
+              wiggle: 'wiggle 1s ease-in-out infinite',
+              float: 'float 3s ease-in-out infinite',
+              'pop-in': 'pop-in 0.6s cubic-bezier(0.175, 0.8, 0.32, 1.1) forwards',
+              'slide-up': 'slide-up 0.5s ease-out forwards',
+              'spin-slow': 'spin 10s linear infinite',
+              'fade-in': 'fade-in 0.3s ease-out forwards',
+              'zoom-in': 'zoom-in 0.35s ease-out forwards',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0"
+  }
+}
+</script>
+<!-- <link rel="stylesheet" href="/index.css"> -->
+</head>
+  <body class="bg-cv-bg text-slate-800">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
