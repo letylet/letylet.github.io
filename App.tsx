@@ -14,7 +14,8 @@ const LanguageSwitcher = () => {
   const toggleLanguage = () => {
     setIsSpinning(true);
     setTimeout(() => setIsSpinning(false), 500); // Spin duration
-    setLanguage(language === 'it' ? 'en' : 'it');
+    localStorage.setItem("language", language === 'it' ? 'en' : 'it');
+    setLanguage(localStorage.getItem("language"));
   };
 
   return (

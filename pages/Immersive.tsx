@@ -57,7 +57,7 @@ const Immersive: React.FC = () => {
   const { t } = useLanguage();
 
   useEffect(() => {
-    const hasSeen = sessionStorage.getItem('immersive_welcome_seen');
+    const hasSeen = localStorage.getItem('immersive_welcome_seen');
     if (!hasSeen) {
         const timer = setTimeout(() => setShowWelcome(true), 500);
         return () => clearTimeout(timer);
@@ -79,7 +79,7 @@ const Immersive: React.FC = () => {
   };
 
   const handleCloseWelcome = () => {
-    sessionStorage.setItem('immersive_welcome_seen', 'true');
+    localStorage.setItem('immersive_welcome_seen', 'true');
     setShowWelcome(false);
   };
 
