@@ -18,7 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const { language, t } = useLanguage();
 
   const isExpandable = project.type === ProjectType.EXPANDABLE;
-  const hasLink = !!project.link;
+  const hasLink = !!project.link || !!project.gameLink;
 
   const openLightbox = (index: number) => {
     setPhotoIndex(index);
@@ -105,6 +105,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 {project.shortDescription[language]}
               </p>
               <Tags tags={project.tags} />
+
+              {/* Link Button */}
+              {hasLink && (
+                <div className="my-5">
+                  <LinkCardElement link={!!project.link ? project.link : project.gameLink} label={!!project.link ? t.projects.seeDetails : t.projects.playGame}/>
+                </div>
+              )}
             </div>
             
             {/* Image Content: Visible on mobile (order-first) and desktop (order-none/last) */}
@@ -143,14 +150,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                           </div>
                       ))}
                   </div>
-                  {/* Link Button */}
-                  {hasLink && (
-                    <a href={project.link} target="_blank" rel="noreferrer">
-                      <Button variant="secondary">
-                          {t.projects.visitWebsite} <ExternalLink size={18} />
-                      </Button>
-                    </a>
-                  )}
               </div>
             </div>
           )}
@@ -169,14 +168,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                     <>{t.projects.seeDetails} <ChevronDown size={20} /></>
                   )}
                 </Button>
-              )}
-              
-              {hasLink && !isExpandable && (
-                <a href={project.link} target="_blank" rel="noreferrer">
-                  <Button variant="secondary">
-                      {t.projects.visitWebsite} <ExternalLink size={18} />
-                  </Button>
-                </a>
               )}
             </div>
           )}
@@ -200,5 +191,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     </>
   );
 };
+
+
+const LinkCardElement = ({link, label } : {link: string, label: string}) => {
+  return (
+    <a href={link} target="_blank" rel="noreferrer">
+      <Button variant="secondary">
+          {label} <ExternalLink size={18} />
+      </Button>
+    </a>
+  )
+}
 
 export default ProjectCard;

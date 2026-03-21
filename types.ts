@@ -32,6 +32,7 @@ export interface Project {
   type: ProjectType;
   category: ProjectCategory;
   link?: string;
+  gameLink?: string;
 }
 
 export interface IconProps {

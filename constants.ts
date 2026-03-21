@@ -110,7 +110,7 @@ export const PROJECTS: Project[] = [
     },
     sortDate: '2022-09-01',
     type: ProjectType.EXPANDABLE,
-    link: 'https://www.plumesoft.games',
+    gameLink: 'https://www.plumesoft.games/games/umbrellaplus/',
     category: ProjectCategory.GAME
   },
   {
@@ -135,7 +135,7 @@ export const PROJECTS: Project[] = [
     },
     sortDate: '2026-01-01',
     type: ProjectType.FIXED,
-    link: 'https://globalgamejam.org/games/2026/mascaria-8',
+    gameLink: 'https://dag7.itch.io/mascaria',
     category: ProjectCategory.GAME
   },
   {
@@ -160,7 +160,8 @@ export const PROJECTS: Project[] = [
     },
     sortDate: '2024-02-01',
     type: ProjectType.FIXED,
-    category: ProjectCategory.GAME
+    category: ProjectCategory.GAME,
+    gameLink: "https://store.steampowered.com/app/1678880/SeaRing/"
   },
   {
     id: 'Esperienza interattiva con C++ e OpenGL',
