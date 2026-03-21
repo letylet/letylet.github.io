@@ -203,7 +203,7 @@ export const translations = {
       pageTitle: "My Projects",
       titleTooltip: "Click me to spark ideas",
       seeDetails: "See details",
-      playGames: "Play",
+      playGame: "Play",
       seeLess: "See less",
       detailsHeader: "Project Details",
       visitWebsite: "See more",
